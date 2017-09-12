@@ -29,13 +29,13 @@ VIA PE-console see link_here
 
 Via BOLT more information here LINK
 ```bolt
-bolt task exec command='df -hs'
+bolt task exec command='df -h'
 ```
 
 Via the PE CLI, more information here LINK
 
 ```pe
-puppet task exec command='df -hs'
+puppet task exec command='df -h'
 ```
 
 ## Reference

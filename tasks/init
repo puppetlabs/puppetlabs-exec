@@ -1,0 +1,24 @@
+#!/opt/puppetlabs/puppet/bin/ruby
+
+require 'puppet'
+require 'json'
+require 'open3'
+
+def get(command)
+  cmd_string = command
+  stdout, stderr, status = Open3.capture3(cmd_string)
+  raise Puppet::Error, stderr if status != 0
+  { status: stdout.strip }
+end
+
+args = JSON.parse(STDIN.read)
+command = args['command']
+
+begin
+  result = get(command)
+  puts result.to_json
+  exit 0
+rescue Puppet::Error => e
+  puts({ status: 'failure', error: e.message }.to_json)
+  exit 1
+end
