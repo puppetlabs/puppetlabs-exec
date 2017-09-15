@@ -6,6 +6,14 @@
     "command": {
       "description": "The command to run, including all arguments",
       "type": "String[1]"
+    },
+    "interleave": {
+      "description": "Interleave the stdout and stderr streams.(default: true)",
+      "type": "Optional[Boolean]"
+    },
+    "failonfail": {
+      "description": "Should the task if the command exits nonzero.(default: true)",
+      "type": "Optional[Boolean]"
     }
   }
 }
