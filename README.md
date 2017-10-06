@@ -4,84 +4,43 @@
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with exec task](#setup)
-    * [Setup requirements](#setup-requirements)
+2. [Requirements](#requirements)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+5. [Getting help - Some Helpful commands](#getting-help)
 
 ## Description
 
-This module provides the exec task. This allows you to run an arbitary command with arguments. For example displaying the free disk space. It requires Puppet 5 or bolt installed
+This module provides the exec task. This task allows you to run an arbitary command with arguments.
 
-## Setup
+## Requirements
+This module is compatible with Puppet Enterprise and Puppet Bolt.
 
-### Setup Requirements
+* To run tasks with Puppet Enterprise, PE 2017.3 or later must be installed on the machine from which you are running task commands. Machines receiving task requests must be Puppet agents.
 
-This module requires either Puppet enterprise or Bolt to function.
+* To run tasks with Puppet Bolt, Bolt 0.5 or later must be installed on the machine from which you are running task commands. Machines receiving task requests must have SSH or WinRM services enabled.
 
 ## Usage
 
-There are a number of ways to execute the exec task. The examples below return the free disk space 
+To run an exec task, use the task command, specifying the command to be executed.
 
-VIA PE-console see link_here
+* With PE on the command line, run `puppet task run exec command=<COMMAND>`.
+* With Bolt on the command line, run `bolt task run exec command=<COMMAND>`.
 
-Via BOLT more information here LINK
-```bolt
-bolt task exec command='df -h'
-```
+For example, to view the free disk space of a host, run:
 
-Via the PE CLI, more information here LINK
+* With PE, run `puppet task run exec command="df -h" --nodes neptune`.
+* With Bolt, run `bolt task run exec command="df -h" --nodes neptune --modules ~/modules`.
 
-```pe
-puppet task exec command='df -h'
-```
+You can also run tasks in the PE console. See PE task documentation for complete information.
 
 ## Reference
 
-To get the availible actions and parameters run
+To view the available actions and parameters, on the command line, run `puppet task show exec` or see the exec module page on the [Forge](https://forge.puppet.com/puppetlabs/exec/tasks).
 
-```pe
-puppet task show exec
-```
+## Getting Help
 
-```bolt
-puppet task show exec
-```
+To display help for the package task, run `puppet task show package`
 
-or go to https://forge.puppet.com/puppetlabs/exec/tasks
+To show help for the task CLI, run `puppet task run --help` or `bolt task run --help`
 
-## Development
-
-Here is a quick how to get up and running 
-```
-git clone git@github.com:puppetlabs/exec.git
-```
-```
-bundle install --path .bundle/gems/
-```
-```
-BEAKER_destroy=no PUPPET_INSTALL_TYPE=pe BEAKER_PE_DIR=http://enterprise.delivery.puppetlabs.net/2017.3/ci-ready  BEAKER_PE_VER=2017.3.0-rc8-41-g4981bd3 BEAKER_set=centos7-pooler  bundle exec rspec spec/acceptance
-```
-
-This will spit out a vmpooler machine name you can ssh to
-
-```
-ssh -i ~/.ssh/id_rsa-acceptance root@<VMPOOLER HOSTNAME FROM ABOVE> 
-```
-
-show the status of the openssl exec (use the actual name of your node)
-```
-puppet task run exec --nodes cgx1boldbmbi3vn.delivery.puppetlabs.net action=status exec=httpd
-```
-
-display help for exec
-```
-puppet task show exec
-```
-
-show help for the task cli
-```
-puppet task run --help
-```
