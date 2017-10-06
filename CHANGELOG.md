@@ -1,11 +1,7 @@
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
 ## Release 0.1.0
+This is the initial release of the exec task.
 
-**Features**
-
-**Bugfixes**
-
-**Known Issues**
+## Features
+- Execute a command with arguments.
+- Enable/Disable intervleaving of stddout and stderr of the command.
+- Enable/Disable fail on failure of the command.
