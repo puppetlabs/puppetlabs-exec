@@ -4,7 +4,7 @@
   "author": "puppet",
   "summary": "Tasks that allows the exectution of a command and parameters",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/puppetlabs/puppetlabs-exec",
   "dependencies": [],
   "operatingsystem_support": [
     {
