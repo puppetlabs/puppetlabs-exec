@@ -1,6 +1,5 @@
 {
   "description": "Executes an arbitrary shell command on the target system",
-  "supports_noop": false,
   "input_method": "stdin",
   "parameters": {
     "command": {
