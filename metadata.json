@@ -2,7 +2,7 @@
   "name": "puppetlabs-exec",
   "version": "0.1.0",
   "author": "puppet",
-  "summary": "Tasks that allows the exectution of a command and parameters",
+  "summary": "Tasks that allows the execution of a command and parameters",
   "license": "Apache-2.0",
   "source": "https://github.com/puppetlabs/puppetlabs-exec",
   "dependencies": [],
