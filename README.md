@@ -30,7 +30,7 @@ To run an exec task, use the task command, specifying the command to be executed
 For example, to view the free disk space of a host, run:
 
 * With PE, run `puppet task run exec command="df -h" --nodes neptune`.
-* With Bolt, run `bolt task run exec command="df -h" --nodes neptune --modules ~/modules`.
+* With Bolt, run `bolt task run exec command="df -h" --nodes neptune --modulepath ~/modules`.
 
 You can also run tasks in the PE console. See PE task documentation for complete information.
 
