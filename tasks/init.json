@@ -11,7 +11,7 @@
       "type": "Optional[Boolean]"
     },
     "failonfail": {
-      "description": "Should the task if the command exits nonzero.(default: true)",
+      "description": "Should the task fail if the command exits nonzero.(default: true)",
       "type": "Optional[Boolean]"
     }
   }
