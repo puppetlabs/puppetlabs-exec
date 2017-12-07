@@ -17,8 +17,8 @@ end
 describe 'exec task' do
   describe 'puppet exec' do
     it 'single command' do
-      result = run_task(task_name: 'exec', params: 'command=netstat')
-      expect_multiple_regexes(result: result, regexes: [%r{Proto.*Local Address.*Foreign Address.*(S|s)tate}, %r{Job completed. 1/1 nodes succeeded|Ran on 1 node}])
+      result = run_task(task_name: 'exec', params: 'command=puppet')
+      expect_multiple_regexes(result: result, regexes: [%r{See 'puppet help' for help on available puppet subcommands}, %r{Job completed. 1/1 nodes succeeded|Ran on 1 node}])
     end
     it 'single command with args' do
       result = run_task(task_name: 'exec', params: args_command_line_text)
