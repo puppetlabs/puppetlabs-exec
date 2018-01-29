@@ -4,11 +4,11 @@ require 'spec_helper_acceptance'
 def args_command_line_text
   command_text = 'command='
   if fact_on(default, 'osfamily') == 'windows'
-    command_text << "\\"
+    command_text << '\\'
   end
   command_text << "'puppet man module --render-as s"
   if fact_on(default, 'osfamily') == 'windows'
-    command_text << "\\"
+    command_text << '\\'
   end
   command_text << "'"
   command_text

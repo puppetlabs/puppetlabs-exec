@@ -12,22 +12,20 @@ def get3(command)
 end
 
 def get2(command)
-  output, exit_code  = Open3.popen2({}, command, {:err => [:child, :out]}) do  |i, o, w|
-    out = o.read()
+  output, exit_code = Open3.popen2({}, command, err: [:child, :out]) do |_i, o, w|
+    out = o.read
     exit_code = w.value.exitstatus
     [out, exit_code]
   end
 
   { _output: output,
-    exit_code: exit_code
-  }
+    exit_code: exit_code }
 end
 
 def default_true(params, k)
   v = params[k]
-  if v.nil?
-    true
-  end
+  return unless v.nil?
+  true
 end
 
 params = JSON.parse(STDIN.read)
