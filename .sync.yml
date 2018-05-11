@@ -8,9 +8,6 @@
   secure: ""
   branches:
     - release
-  extras:
-    - rvm: 2.1.9
-      script: "\"bundle exec rake release_checks\""
 
 Gemfile:
   required:
@@ -37,3 +34,6 @@ Gemfile:
 .yardopts:
   optional:
     - --output-dir docs/
+
+.gitlab-ci.yml:
+  unmanaged: true
