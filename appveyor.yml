@@ -1,3 +1,4 @@
+---
 version: 1.1.x.{build}
 skip_commits:
   message: /^\(?doc\)?.*/
@@ -9,8 +10,10 @@ init:
   - 'mkdir C:\ProgramData\PuppetLabs\hiera && exit 0'
   - 'mkdir C:\ProgramData\PuppetLabs\puppet\var && exit 0'
 environment:
-  PUPPET_GEM_VERSION: ~> 4.0
   matrix:
+    -
+      RUBY_VERSION: 24-x64
+      CHECK: check:symlinks check:git_ignore check:dot_underscore check:test_file
     -
       RUBY_VERSION: 24-x64
       CHECK: syntax lint
@@ -21,15 +24,21 @@ environment:
       RUBY_VERSION: 24-x64
       CHECK: rubocop
     -
-      RUBY_VERSION: 24-x64
-      CHECK: spec
+      PUPPET_GEM_VERSION: ~> 4.0
+      RUBY_VERSION: 21
+      CHECK: parallel_spec
     -
+      PUPPET_GEM_VERSION: ~> 4.0
       RUBY_VERSION: 21-x64
-      CHECK: spec
+      CHECK: parallel_spec
+    -
+      PUPPET_GEM_VERSION: ~> 5.0
+      RUBY_VERSION: 24
+      CHECK: parallel_spec
     -
       PUPPET_GEM_VERSION: ~> 5.0
       RUBY_VERSION: 24-x64
-      CHECK: spec
+      CHECK: parallel_spec
 matrix:
   fast_finish: true
 install:
