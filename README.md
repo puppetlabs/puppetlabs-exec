@@ -7,7 +7,8 @@
 2. [Requirements](#requirements)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Getting help - Some Helpful commands](#getting-help)
+5. [Limitations - OS compatibility, etc.](#limitations)
+6. [Getting help - Some Helpful commands](#getting-help)
 
 ## Description
 
@@ -37,6 +38,10 @@ You can also run tasks in the PE console. See PE task documentation for complete
 ## Reference
 
 To view the available actions and parameters, on the command line, run `puppet task show exec` or see the exec module page on the [Forge](https://forge.puppet.com/puppetlabs/exec/tasks).
+
+## Limitations
+
+For an extensive list of supported operating systems, see [metadata.json](https://github.com/puppetlabs/puppetlabs-websphere_application_server/blob/master/metadata.json)
 
 ## Getting Help
 
