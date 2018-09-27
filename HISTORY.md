@@ -1,5 +1,3 @@
-# Change log
-
 ## 0.2.0
 ### Summary
 This release uses the PDK convert functionality which in return makes the module PDK compliant. It also includes one feature and a roll up of maintenance changes.
