@@ -1,9 +1,9 @@
 {
-  "description": "Executes an arbitrary shell command on linux.(without a puppet agent)",
+  "description": "Execute an arbitrary shell command (without a puppet agent)",
   "input_method": "environment",
   "parameters": {
     "command": {
-      "description": "The command to run, including all arguments",
+      "description": "The command to run, including all arguments.",
       "type": "String[1]"
     }
   }
