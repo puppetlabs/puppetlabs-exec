@@ -41,7 +41,7 @@ To view the available actions and parameters, on the command line, run `puppet t
 
 ## Limitations
 
-For an extensive list of supported operating systems, see [metadata.json](https://github.com/puppetlabs/puppetlabs-websphere_application_server/blob/master/metadata.json)
+For an extensive list of supported operating systems, see [metadata.json](https://github.com/puppetlabs/puppetlabs-exec/blob/master/metadata.json)
 
 ## Getting Help
 
