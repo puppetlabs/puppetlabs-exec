@@ -52,9 +52,9 @@ fi
 
 # Run command, redirecting stderr if requested
 if [ "$interleave" == "true" ]; then
-    output_from_command=$(${command} 2>&1)
+    output_from_command=$(eval ${command} 2>&1)
 else
-    output_from_command=$(${command})
+    output_from_command=$(eval ${command})
 fi
 
 status_from_command=$?
