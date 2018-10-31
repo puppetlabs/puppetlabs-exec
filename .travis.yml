@@ -3,6 +3,7 @@ sudo: false
 dist: trusty
 cache: bundler
 before_install:
+  - choco install ruby
   - bundle -v
   - rm -f Gemfile.lock
   - gem update --system
