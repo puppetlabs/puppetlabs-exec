@@ -1,28 +1,21 @@
 # run a test task
 require 'spec_helper_acceptance'
 
-def args_command_line_text
-  command_text = 'command='
-  if fact_on(default, 'osfamily') == 'windows'
-    command_text << '\\'
-  end
-  command_text << "'puppet man module --render-as s"
-  if fact_on(default, 'osfamily') == 'windows'
-    command_text << '\\'
-  end
-  command_text << "'"
-  command_text
-end
-
 describe 'exec task' do
+  include Beaker::TaskHelper::Inventory
+  include BoltSpec::Run
+
   describe 'puppet exec' do
     it 'single command' do
-      result = run_task(task_name: 'exec', params: 'command=puppet')
-      expect_multiple_regexes(result: result, regexes: [%r{See 'puppet help' for help on available puppet subcommands}, %r{Job completed. 1/1 nodes succeeded|Ran on 1 node}])
+      result = task_run('exec', 'command' => 'puppet')
+
+      expect(result.first['result']['exit_code']).to eq 0
+      expect(result.first['result']['_output']).to match %r{See 'puppet help' for help on available puppet subcommands}
     end
     it 'single command with args' do
-      result = run_task(task_name: 'exec', params: args_command_line_text)
-      expect_multiple_regexes(result: result, regexes: [%r{.*Creates, installs and searches for modules on the Puppet Forge.*}, %r{Job completed. 1/1 nodes succeeded|Ran on 1 node}])
+      result = task_run('exec', 'command' => 'puppet help module search')
+      expect(result.first['result']['exit_code']).to eq 0
+      expect(result.first['result']['_output']).to match %r{.*USAGE: puppet module search <search_term>.*}
     end
   end
 end

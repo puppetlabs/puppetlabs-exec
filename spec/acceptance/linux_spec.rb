@@ -2,8 +2,13 @@
 require 'spec_helper_acceptance'
 
 describe 'linux exec task', unless: fact_on(default, 'osfamily') == 'windows' do
+  include Beaker::TaskHelper::Inventory
+  include BoltSpec::Run
+
   it 'echo' do
-    result = run_task(task_name: 'exec::linux', params: "command='echo Miku is the best'")
-    expect_multiple_regexes(result: result, regexes: [%r{Miku is the best}, %r{Ran on 1 node}])
+    result = task_run('exec::linux', 'command' => 'echo Miku is the best')
+
+    expect(result.first['status']).to eq 'success'
+    expect(result.first['result']['_output']).to match %r{Miku is the best}
   end
 end
