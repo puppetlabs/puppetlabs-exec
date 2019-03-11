@@ -2,8 +2,13 @@
 require 'spec_helper_acceptance'
 
 describe 'windows exec task', if: fact_on(default, 'osfamily') == 'windows' do
+  include Beaker::TaskHelper::Inventory
+  include BoltSpec::Run
+
   it 'echo' do
-    result = run_task(task_name: 'exec::windows', params: "command=\\'echo Otto is the best\\'")
-    expect_multiple_regexes(result: result, regexes: [%r{Otto is the best}, %r{Ran on 1 node}])
+    result = task_run('exec::windows', 'command' => 'echo Otto is the best')
+
+    expect(result.first['status']).to eq 'success'
+    expect(result.first['result']['_output']).to match %r{Otto is the best}
   end
 end
