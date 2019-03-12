@@ -1,7 +1,7 @@
 # run a test task
 require 'spec_helper_acceptance'
 
-describe 'linux exec task', unless: fact_on(default, 'osfamily') == 'windows' do
+describe 'linux exec task', unless: os[:family] == 'windows' do
   include Beaker::TaskHelper::Inventory
   include BoltSpec::Run
 
