@@ -14,5 +14,10 @@
       "description": "Should the task fail if the command exits nonzero.(default: true)",
       "type": "Optional[Boolean]"
     }
-  }
+  },
+  "implementations": [
+    {"name": "init.rb", "requirements": ["puppet-agent"]},
+    {"name": "windows.ps1", "requirements": ["powershell"], "input_method": "powershell"},
+    {"name": "linux.sh", "requirements": ["shell"], "input_method": "environment"}
+  ]
 }
