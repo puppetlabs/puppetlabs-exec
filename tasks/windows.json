@@ -6,5 +6,12 @@
       "description": "The command to run, including all arguments.",
       "type": "String[1]"
     }
+  },
+  "extensions": {
+    "discovery": {
+      "friendlyName": "Run a shell command on Windows",
+      "osFamily": "windows",
+      "type": ["host"]
+    }
   }
 }
