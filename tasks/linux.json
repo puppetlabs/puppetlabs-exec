@@ -1,17 +1,11 @@
 {
   "description": "Execute an arbitrary shell command (without a puppet agent)",
+  "private": true,
   "input_method": "environment",
   "parameters": {
     "command": {
       "description": "The command to run, including all arguments.",
       "type": "String[1]"
-    }
-  },
-  "extensions": {
-    "discovery": {
-        "friendlyName": "Run a shell command on Linux",
-        "osFamily": "linux",
-        "type": ["host"]
     }
   }
 }
