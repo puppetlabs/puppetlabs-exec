@@ -24,13 +24,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
+- \(DI-3301\) Adding agentless windows and linux exec tasks [\#43](https://github.com/puppetlabs/puppetlabs-exec/pull/43) ([HairyMike](https://github.com/HairyMike))
 - \(FM-7262\) - Addition of support for ubuntu 18.04 [\#32](https://github.com/puppetlabs/puppetlabs-exec/pull/32) ([david22swan](https://github.com/david22swan))
 - \[FM-7057\] Addition of Debian 9 support to exec [\#30](https://github.com/puppetlabs/puppetlabs-exec/pull/30) ([david22swan](https://github.com/david22swan))
 - \(MODULES-6609\) Update metadata for Win2k8R2 [\#23](https://github.com/puppetlabs/puppetlabs-exec/pull/23) ([jarretlavallee](https://github.com/jarretlavallee))
-
-### UNCATEGORIZED PRS; GO LABEL THEM
-
-- \(DI-3301\) Adding agentless windows and linux exec tasks [\#43](https://github.com/puppetlabs/puppetlabs-exec/pull/43) ([HairyMike](https://github.com/HairyMike))
 
 ## 0.2.0
 ### Summary
