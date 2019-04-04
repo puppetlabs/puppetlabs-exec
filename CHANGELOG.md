@@ -2,7 +2,23 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
-## [0.3.0](https://github.com/puppetlabs/puppetlabs-exec/tree/0.3.0) (2018-09-27)
+## [0.4.0](https://github.com/puppetlabs/puppetlabs-exec/tree/0.4.0) (2019-04-04)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/0.3.0...0.4.0)
+
+### Added
+
+- \(SEN-788\) Make linux and windows private [\#68](https://github.com/puppetlabs/puppetlabs-exec/pull/68) ([conormurraypuppet](https://github.com/conormurraypuppet))
+- \(SEN-788\) Add discovery extension metadata [\#67](https://github.com/puppetlabs/puppetlabs-exec/pull/67) ([conormurraypuppet](https://github.com/conormurraypuppet))
+- \(SEN-788\) Add implementation metadata [\#66](https://github.com/puppetlabs/puppetlabs-exec/pull/66) ([conormurraypuppet](https://github.com/conormurraypuppet))
+
+### Fixed
+
+- \(MODULES-8717\) Move testing from task\_helper to BoltSpec & Fix BoltSpec dependency issue [\#62](https://github.com/puppetlabs/puppetlabs-exec/pull/62) ([HelenCampbell](https://github.com/HelenCampbell))
+- pdksync - \(FM-7655\) Fix rubygems-update for ruby \< 2.3 [\#55](https://github.com/puppetlabs/puppetlabs-exec/pull/55) ([tphoney](https://github.com/tphoney))
+- \(DI-3301\) Linux task should use eval [\#49](https://github.com/puppetlabs/puppetlabs-exec/pull/49) ([davejohnston](https://github.com/davejohnston))
+
+## [0.3.0](https://github.com/puppetlabs/puppetlabs-exec/tree/0.3.0) (2018-09-28)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/0.2.0...0.3.0)
 
@@ -11,6 +27,10 @@ All notable changes to this project will be documented in this file. The format 
 - \(FM-7262\) - Addition of support for ubuntu 18.04 [\#32](https://github.com/puppetlabs/puppetlabs-exec/pull/32) ([david22swan](https://github.com/david22swan))
 - \[FM-7057\] Addition of Debian 9 support to exec [\#30](https://github.com/puppetlabs/puppetlabs-exec/pull/30) ([david22swan](https://github.com/david22swan))
 - \(MODULES-6609\) Update metadata for Win2k8R2 [\#23](https://github.com/puppetlabs/puppetlabs-exec/pull/23) ([jarretlavallee](https://github.com/jarretlavallee))
+
+### UNCATEGORIZED PRS; GO LABEL THEM
+
+- \(DI-3301\) Adding agentless windows and linux exec tasks [\#43](https://github.com/puppetlabs/puppetlabs-exec/pull/43) ([HairyMike](https://github.com/HairyMike))
 
 ## 0.2.0
 ### Summary
