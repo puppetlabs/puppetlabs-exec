@@ -37,7 +37,7 @@ You can also run tasks in the PE console. See PE task documentation for complete
 
 ## Reference
 
-To view the available actions and parameters, on the command line, run `puppet task show exec` or see the exec module page on the [Forge](https://forge.puppet.com/puppetlabs/exec/tasks).
+For detailed reference information, see the [REFERENCE.md](https://github.com/puppetlabs/puppetlabs-exec/blob/master/REFERENCE.md)
 
 ## Limitations
 
