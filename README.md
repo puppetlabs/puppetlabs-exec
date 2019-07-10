@@ -51,3 +51,6 @@ To display help for the package task, run `puppet task show package`
 
 To show help for the task CLI, run `puppet task run --help` or `bolt task run --help`
 
+## Development
+
+We are experimenting with a new tool for running acceptance tests. Its name is [puppet_litmus](https://github.com/puppetlabs/puppet_litmus) this replaces beaker as the test runner. To run the acceptance tests follow the instructions from this point [here](https://github.com/puppetlabs/puppet_litmus/wiki/Tutorial:-use-Litmus-to-execute-acceptance-tests-with-a-sample-module-(MoTD)#install-the-necessary-gems-for-the-module).
