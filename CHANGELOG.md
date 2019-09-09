@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v0.5.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v0.5.0) (2019-09-05)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/0.4.0...v0.5.0)
+
+### Changed
+
+- pdksync - \(MODULES-8444\) - Raise lower Puppet bound [\#75](https://github.com/puppetlabs/puppetlabs-exec/pull/75) ([david22swan](https://github.com/david22swan))
+
+### Added
+
+- \(FM-8217\) Port module to litmus [\#83](https://github.com/puppetlabs/puppetlabs-exec/pull/83) ([michaeltlombardi](https://github.com/michaeltlombardi))
+- \(FM-8152\) Add Windows Server 2019 support [\#80](https://github.com/puppetlabs/puppetlabs-exec/pull/80) ([eimlav](https://github.com/eimlav))
+- \(FM-8039\) Add RedHat 8 support [\#79](https://github.com/puppetlabs/puppetlabs-exec/pull/79) ([eimlav](https://github.com/eimlav))
+- \[FM-7943\] Puppet Strings [\#78](https://github.com/puppetlabs/puppetlabs-exec/pull/78) ([carabasdaniel](https://github.com/carabasdaniel))
+
 ## [0.4.0](https://github.com/puppetlabs/puppetlabs-exec/tree/0.4.0) (2019-04-04)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/0.3.0...0.4.0)
