@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v0.8.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v0.7.0) (2020-10-06)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v0.7.0...v0.7.0)
+
+### Added
+
+- pdksync - \(IAC-973\) - Update travis/appveyor to run on new default branch main [\#129](https://github.com/puppetlabs/puppetlabs-exec/pull/129) ([david22swan](https://github.com/david22swan))
+
+### Fixed
+
+- \(IAC-985\) - Removal of Inappropriate terminology [\#134](https://github.com/puppetlabs/puppetlabs-exec/pull/134) ([david22swan](https://github.com/david22swan))
+
 ## [v0.7.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v0.7.0) (2020-01-21)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v0.6.0...v0.7.0)
