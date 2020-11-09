@@ -33,6 +33,9 @@ For example, to view the free disk space of a host, run:
 * With PE, run `puppet task run exec command="df -h" --nodes neptune`.
 * With Bolt, run `bolt task run exec command="df -h" --nodes neptune --modulepath ~/modules`.
 
+This example is specifically for Windows using Powershell and returns a list of features installed on the server:
+`puppet task run exec command='powershell -command "Get-WindowsFeature  | Where Installed | Format-List -Property Name"' --nodes neptune`
+
 You can also run tasks in the PE console. See PE task documentation for complete information.
 
 ## Reference
