@@ -8,11 +8,11 @@
     },
     "interleave": {
       "description": "Interleave the stdout and stderr streams.(default: true)",
-      "type": "Optional[Boolean]"
+      "type": "Optional[Variant[Boolean, Enum['true','false']]]"
     },
     "failonfail": {
       "description": "Should the task fail if the command exits nonzero.(default: true)",
-      "type": "Optional[Boolean]"
+      "type": "Optional[Variant[Boolean, Enum['true','false']]]"
     }
   },
   "implementations": [
