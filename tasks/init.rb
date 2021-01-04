@@ -1,4 +1,5 @@
 #!/opt/puppetlabs/puppet/bin/ruby
+# frozen_string_literal: true
 
 require 'json'
 require 'open3'
@@ -33,13 +34,11 @@ command = params['command']
 failonfail = default_true(params, 'failonfail')
 interleave = default_true(params, 'interleave')
 
-begin
-  result = interleave ? get2(command) : get3(command)
-  puts result.to_json
+result = interleave ? get2(command) : get3(command)
+puts result.to_json
 
-  if failonfail
-    exit result[:exit_code]
-  else
-    exit 0
-  end
+if failonfail
+  exit result[:exit_code]
+else
+  exit 0
 end
