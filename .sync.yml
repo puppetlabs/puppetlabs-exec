@@ -1,43 +1,9 @@
 ---
 ".gitlab-ci.yml":
   delete: true
-".travis.yml":
-  global_env:
-    - HONEYCOMB_WRITEKEY="7f3c63a70eecc61d635917de46bea4e6",HONEYCOMB_DATASET="litmus tests"
-  dist: trusty
-  deploy_to_forge:
-    enabled: false
-  branches:
-  - release
-  user: puppet
-  secure: ''
-  use_litmus: true
-  litmus:
-    provision_list:
-      - travis_deb
-      - travis_ub
-      - travis_el7
-      - travis_el8
-      - ---travis_el
-  simplecov: true
-  notifications:
-    slack:
-      secure: >-
-        YnM5eZvuAyQWpUiD/fzH2CzSKvhX4iCEQxdxmNIthNafqUncEok3OZmpZnf9knh0pjjtgT9wHaVFDFAhiJoewwbbVTGV7aNhVbtGexB/v3gd7QWAuOoPYjrd0atF7Tpd8VR0aXW1CyIGdJ6Hk4KgVDY9Uu+9jFXtu+zegG05oq7OsPQ/KjfCRRjQxKzNtLvjMVBf6cXcRhv3TXC3E2iRcwuQ8E8yuf6R9U+4mTtNMfVJ9pW/Zx2qrdWjsDIIi32QfcENsSE/1FkqX3IRvVQGGyod+OxsDN+Pq5txN9TimhVLgkcQ8bHsT9MS4TnfZSyuHFGkxf26zd3A9LSfIT7qjNOVh1r68U+Co2bm43xGUUHDp1FRrxTFI6PpIHecwGqSsojwQ3kdKnfGhUEyIWYcYTN+GoBddFAUIKh8NWRKqg6TIbEgR0RgLkGszImlM/+1A8vbg3bJodFZmsg8tZg7V0ZpcWG98YwUEuryxCph1XcUAVD0nFZ2WCA2hbxk52bIWs72u+5S211HFpt8rURUORqSTQJ3bE+tbQDS6+rFidwNUUxuIjjT0PlX0fQ9JmFh9eEmAFnRc5Gz61pfAPC0C8n0MrSv5GyQaFzv4470qQHiZwlGjpczzLsEQZKIaMtvTAla9NatT5R6EyiRLXmSZXP698zWzmW5o5LI0Pl36F8=
 appveyor.yml:
-  environment:
-    HONEYCOMB_WRITEKEY: 7f3c63a70eecc61d635917de46bea4e6
-    HONEYCOMB_DATASET: litmus tests
-  use_litmus: true
-  matrix_extras:
-  - RUBY_VERSION: 25-x64
-    ACCEPTANCE: 'yes'
-    TARGET_HOST: localhost
-  - RUBY_VERSION: 25-x64
-    ACCEPTANCE: 'yes'
-    TARGET_HOST: localhost
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-  simplecov: true
+  delete: true
+
 Gemfile:
   optional:
     ":development":
@@ -53,3 +19,10 @@ spec/spec_helper.rb:
   unmanaged: false
 .github/workflows/pr_test.yml:
   unmanaged: false
+.github/workflows/spec.yml:
+  checks: 'syntax lint metadata_lint check:symlinks check:git_ignore check:dot_underscore check:test_file rubocop'
+  unmanaged: false
+.github/workflows/release.yml:
+  unmanaged: false
+.travis.yml:
+  delete: true
