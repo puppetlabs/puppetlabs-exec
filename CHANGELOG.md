@@ -2,13 +2,20 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v2.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v2.0.0) (2021-05-22)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v1.0.0...v2.0.0)
+
+### Changed
+
+- Update metadata.json - remove ubuntu 14.04 [\#157](https://github.com/puppetlabs/puppetlabs-exec/pull/157) ([daianamezdrea](https://github.com/daianamezdrea))
+
 ## [v1.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v1.0.0) (2021-03-01)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v0.9.0...v1.0.0)
 
 ### Changed
 
-- Update metadata.json - remove ubuntu 14.04 [\#157](https://github.com/puppetlabs/puppetlabs-exec/pull/157) ([daianamezdrea](https://github.com/daianamezdrea))
 - pdksync -  Remove RHEL 5 family support [\#155](https://github.com/puppetlabs/puppetlabs-exec/pull/155) ([sanfrancrisko](https://github.com/sanfrancrisko))
 - pdksync - Remove Puppet 5 from testing and bump minimal version to 6.0.0 [\#152](https://github.com/puppetlabs/puppetlabs-exec/pull/152) ([carabasdaniel](https://github.com/carabasdaniel))
 
