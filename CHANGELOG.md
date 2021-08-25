@@ -2,13 +2,26 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v2.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v2.0.0) (2021-08-25)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v1.0.0...v2.0.0)
+
+### Changed
+
+- Update metadata.json - remove ubuntu 14.04 [\#157](https://github.com/puppetlabs/puppetlabs-exec/pull/157) ([daianamezdrea](https://github.com/daianamezdrea))
+
+### Added
+
+- pdksync - \(IAC-1720\) - Add Support for Ubuntu 20.04 [\#175](https://github.com/puppetlabs/puppetlabs-exec/pull/175) ([david22swan](https://github.com/david22swan))
+- pdksync - \(IAC-1709\) - Add Support for Debian 11 [\#173](https://github.com/puppetlabs/puppetlabs-exec/pull/173) ([david22swan](https://github.com/david22swan))
+- pdksync - \(IAC-1719\) - Add Support for Debian 10 [\#172](https://github.com/puppetlabs/puppetlabs-exec/pull/172) ([david22swan](https://github.com/david22swan))
+
 ## [v1.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v1.0.0) (2021-03-01)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v0.9.0...v1.0.0)
 
 ### Changed
 
-- Update metadata.json - remove ubuntu 14.04 [\#157](https://github.com/puppetlabs/puppetlabs-exec/pull/157) ([daianamezdrea](https://github.com/daianamezdrea))
 - pdksync -  Remove RHEL 5 family support [\#155](https://github.com/puppetlabs/puppetlabs-exec/pull/155) ([sanfrancrisko](https://github.com/sanfrancrisko))
 - pdksync - Remove Puppet 5 from testing and bump minimal version to 6.0.0 [\#152](https://github.com/puppetlabs/puppetlabs-exec/pull/152) ([carabasdaniel](https://github.com/carabasdaniel))
 
@@ -71,9 +84,9 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
-- \(SEN-788\) Make linux and windows private [\#68](https://github.com/puppetlabs/puppetlabs-exec/pull/68) ([conormurraypuppet](https://github.com/conormurraypuppet))
-- \(SEN-788\) Add discovery extension metadata [\#67](https://github.com/puppetlabs/puppetlabs-exec/pull/67) ([conormurraypuppet](https://github.com/conormurraypuppet))
-- \(SEN-788\) Add implementation metadata [\#66](https://github.com/puppetlabs/puppetlabs-exec/pull/66) ([conormurraypuppet](https://github.com/conormurraypuppet))
+- \(SEN-788\) Make linux and windows private [\#68](https://github.com/puppetlabs/puppetlabs-exec/pull/68) ([conormurray95](https://github.com/conormurray95))
+- \(SEN-788\) Add discovery extension metadata [\#67](https://github.com/puppetlabs/puppetlabs-exec/pull/67) ([conormurray95](https://github.com/conormurray95))
+- \(SEN-788\) Add implementation metadata [\#66](https://github.com/puppetlabs/puppetlabs-exec/pull/66) ([conormurray95](https://github.com/conormurray95))
 
 ### Fixed
 
