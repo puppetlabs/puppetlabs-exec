@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v3.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v3.0.0) (2023-04-04)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v2.2.1...v3.0.0)
+
+### Changed
+
+- \(Cont 777\) - add puppet 8 support/drop puppet 6 support [\#213](https://github.com/puppetlabs/puppetlabs-exec/pull/213) ([jordanbreen28](https://github.com/jordanbreen28))
+
 ## [v2.2.1](https://github.com/puppetlabs/puppetlabs-exec/tree/v2.2.1) (2023-03-23)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v2.2.0...v2.2.1)
@@ -53,7 +61,6 @@ All notable changes to this project will be documented in this file. The format 
 - pdksync - \(IAC-1720\) - Add Support for Ubuntu 20.04 [\#175](https://github.com/puppetlabs/puppetlabs-exec/pull/175) ([david22swan](https://github.com/david22swan))
 - pdksync - \(IAC-1709\) - Add Support for Debian 11 [\#173](https://github.com/puppetlabs/puppetlabs-exec/pull/173) ([david22swan](https://github.com/david22swan))
 - pdksync - \(IAC-1719\) - Add Support for Debian 10 [\#172](https://github.com/puppetlabs/puppetlabs-exec/pull/172) ([david22swan](https://github.com/david22swan))
-- pdksync - \(feat\) - Add support for Puppet 7 [\#143](https://github.com/puppetlabs/puppetlabs-exec/pull/143) ([daianamezdrea](https://github.com/daianamezdrea))
 
 ## [v1.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v1.0.0) (2021-03-01)
 
@@ -70,6 +77,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
+- pdksync - \(feat\) - Add support for Puppet 7 [\#143](https://github.com/puppetlabs/puppetlabs-exec/pull/143) ([daianamezdrea](https://github.com/daianamezdrea))
 - \(GH-31\) Update init types [\#138](https://github.com/puppetlabs/puppetlabs-exec/pull/138) ([pmcmaw](https://github.com/pmcmaw))
 
 ## [v0.8.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v0.8.0) (2020-10-06)
@@ -115,7 +123,6 @@ All notable changes to this project will be documented in this file. The format 
 - \(FM-8152\) Add Windows Server 2019 support [\#80](https://github.com/puppetlabs/puppetlabs-exec/pull/80) ([eimlav](https://github.com/eimlav))
 - \(FM-8039\) Add RedHat 8 support [\#79](https://github.com/puppetlabs/puppetlabs-exec/pull/79) ([eimlav](https://github.com/eimlav))
 - \[FM-7943\] Puppet Strings [\#78](https://github.com/puppetlabs/puppetlabs-exec/pull/78) ([carabasdaniel](https://github.com/carabasdaniel))
-- \(SEN-788\) Make linux and windows private [\#68](https://github.com/puppetlabs/puppetlabs-exec/pull/68) ([conormurray95](https://github.com/conormurray95))
 
 ## [0.4.0](https://github.com/puppetlabs/puppetlabs-exec/tree/0.4.0) (2019-04-04)
 
@@ -123,6 +130,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
+- \(SEN-788\) Make linux and windows private [\#68](https://github.com/puppetlabs/puppetlabs-exec/pull/68) ([conormurray95](https://github.com/conormurray95))
 - \(SEN-788\) Add discovery extension metadata [\#67](https://github.com/puppetlabs/puppetlabs-exec/pull/67) ([conormurray95](https://github.com/conormurray95))
 - \(SEN-788\) Add implementation metadata [\#66](https://github.com/puppetlabs/puppetlabs-exec/pull/66) ([conormurray95](https://github.com/conormurray95))
 
