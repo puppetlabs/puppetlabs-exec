@@ -23,13 +23,14 @@ def get2(command)
     exit_code: exit_code }
 end
 
-def default_true(params, k)
-  v = params[k]
+def default_true(params, key)
+  v = params[key]
   return unless v.nil?
+
   true
 end
 
-params = JSON.parse(STDIN.read)
+params = JSON.parse($stdin.read)
 command = params['command']
 failonfail = default_true(params, 'failonfail')
 interleave = default_true(params, 'interleave')
