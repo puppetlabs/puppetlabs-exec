@@ -22,19 +22,8 @@
 # Offense count: 3
 # Configuration parameters: IgnoredMetadata.
 RSpec/DescribeClass:
-  Exclude:
-    - '**/spec/features/**/*'
-    - '**/spec/requests/**/*'
-    - '**/spec/routing/**/*'
-    - '**/spec/system/**/*'
-    - '**/spec/views/**/*'
-    - 'spec/acceptance/init_spec.rb'
-    - 'spec/acceptance/linux_spec.rb'
-    - 'spec/acceptance/windows_spec.rb'
+  Enabled: False
 
-# Offense count: 3
-RSpec/MultipleExpectations:
-  Max: 2
 
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
