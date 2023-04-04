@@ -23,8 +23,8 @@ def get2(command)
     exit_code: exit_code }
 end
 
-def default_true(params, k)
-  v = params[k]
+def default_true(params, key)
+  v = params[key]
   return unless v.nil?
 
   true
