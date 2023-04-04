@@ -30,7 +30,7 @@ def default_true(params, key)
   true
 end
 
-params = JSON.parse(STDIN.read)
+params = JSON.parse($stdin.read)
 command = params['command']
 failonfail = default_true(params, 'failonfail')
 interleave = default_true(params, 'interleave')
