@@ -5,6 +5,7 @@
   "summary": "Tasks that allows the execution of a command and parameters",
   "license": "Apache-2.0",
   "source": "https://github.com/puppetlabs/puppetlabs-exec",
+  "issues_url": "https://github.com/puppetlabs/puppetlabs-exec/issues",
   "dependencies": [
 
   ],
