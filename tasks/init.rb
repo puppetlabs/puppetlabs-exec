@@ -20,7 +20,7 @@ def get2(command)
   end
 
   { _output: output,
-    exit_code: exit_code }
+    exit_code: }
 end
 
 def default_true(params, key)
