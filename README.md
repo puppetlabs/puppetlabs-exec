@@ -37,6 +37,9 @@ For example, to view the free disk space of a host, run:
 This example is specifically for Windows using Powershell and returns a list of features installed on the server:
 `puppet task run exec command='powershell -command "Get-WindowsFeature  | Where Installed | Format-List -Property Name"' --nodes neptune`
 
+* For exec::windows task, CLI provider can also be passed using the 'provider' parameter. Supported CLIs are cmd and powershell, with default being cmd.
+`puppet task run exec provider=powershell command="Get-WindowsFeature  | Where Installed | Format-List -Property Name" --nodes neptune`
+
 You can also run tasks in the PE console. See PE task documentation for complete information.
 
 ## Reference
