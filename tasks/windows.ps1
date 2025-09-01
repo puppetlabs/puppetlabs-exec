@@ -11,7 +11,11 @@ param(
 
     [Parameter(Mandatory = $false)]
     [bool]
-    $FailOnFail=$true
+    $FailOnFail=$true,
+
+    [Parameter(Mandatory = $false)]
+    [String]
+    $Provider="cmd"
 )
 
 function write_error($Message, $ExitCode){
@@ -34,7 +38,18 @@ if ($Interleave -eq $true){
     $Redirect = "2>&1"
 }
 
-$CommandOutput = cmd /c $Command $Redirect
+if ($Provider -eq "cmd") {
+  $CommandOutput = cmd /c $Command $Redirect
+} elseif ($Provider -eq "powershell") {
+  if ($Interleave -eq $true) {
+    $CommandOutput = powershell -Command $Command 2>&1
+  } else {
+    $CommandOutput = powershell -Command $Command
+  }
+} else {
+  write_error -Message "Unsupported provider: $Provider" -ExitCode 1
+}
+    
 if ($LASTEXITCODE -eq 0){
     echo $CommandOutput
 }

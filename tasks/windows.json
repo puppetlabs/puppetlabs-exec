@@ -6,6 +6,10 @@
     "command": {
       "description": "The command to run, including all arguments.",
       "type": "String[1]"
+    },
+    "provider": {
+      "description": "The CLI provider to run the command on. Supported providers are 'cmd' and 'powershell'. Default is 'cmd'.",
+      "type": "Optional[String]"
     }
   }
 }
