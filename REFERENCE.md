@@ -66,3 +66,9 @@ Data type: `String[1]`
 
 The command to run, including all arguments.
 
+##### `provider`
+
+Data type: `Optional[String]`
+
+The CLI provider to run the command on. Supported providers are 'cmd' and 'powershell'. Default is 'cmd'.
+

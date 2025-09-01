@@ -5,7 +5,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
-## [v3.1.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v3.1.0) - 2024-12-10
+## [v4.0.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v4.0.0) - 2025-09-01
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v3.1.0...v4.0.0)
+
+### Changed
+
+- (CAT-2371) Prepare module for Puppetcore / Drop Support for Puppet 7 [#245](https://github.com/puppetlabs/puppetlabs-exec/pull/245) ([david22swan](https://github.com/david22swan))
+
+### Added
+
+- (MODULES-11579) Add support for powershell CLI to exec::windows [#246](https://github.com/puppetlabs/puppetlabs-exec/pull/246) ([shubhamshinde360](https://github.com/shubhamshinde360))
+
+### Other
+
+- (CAT-2296) Update github runner image to ubuntu-24.04 [#244](https://github.com/puppetlabs/puppetlabs-exec/pull/244) ([shubhamshinde360](https://github.com/shubhamshinde360))
+
+## [v3.1.0](https://github.com/puppetlabs/puppetlabs-exec/tree/v3.1.0) - 2024-12-16
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-exec/compare/v3.0.0...v3.1.0)
 
