@@ -25,7 +25,7 @@ end
 
 def default_true(params, key)
   v = params[key]
-  return unless v.nil?
+  return v unless v.nil?
 
   true
 end
